@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="BAGUNSESSION (BSS) — Coletivo e plataforma musical independente. Abrir espaço ao invés de pedir. Repara na bagunssa.">
+  <title>BAGUNSESSION (BSS) — Abrir espaço ao invés de pedir</title>
+  <link rel="icon" type="image/png" href="assets/logo-bss.png">
+
+  <!-- Google Fonts: Montserrat (Display, Títulos & Destaques) + Karla (Corpo & Fichas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+  <!-- Textura sutil de papel / ruído analógico -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       HEADER / NAVBAR MINIMALISTA
+  ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#topo" class="brand-logo" aria-label="BAGUNSESSION — Início">
+        <img src="assets/logo-bss.png" alt="Logo BSS" class="bss-logo-img">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#manifesto" class="nav-link">Manifesto</a>
+        <a href="#edicoes" class="nav-link">Arquivo</a>
+        <a href="#equipe" class="nav-link">Equipe</a>
+        <a href="#proxima" class="nav-link">Próxima</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <a href="https://instagram.com/bagunsession" target="_blank" rel="noopener noreferrer"
+          class="btn-insta nav-insta-mobile">
+          @bagunsession <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://instagram.com/bagunsession" target="_blank" rel="noopener noreferrer" class="btn-insta">
+          @bagunsession <span aria-hidden="true">↗</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HERO SECTION (MANIFESTO & IMPACTO — FOTO COMPLETA FULL-BLEED)
+    ========================================================== -->
+    <section class="hero" aria-label="Apresentação Bagunsession">
+      <div class="hero-stage">
+        <!-- Foto oficial ocupando toda a largura e altura da seção Hero -->
+        <div class="hero-media-bg" aria-hidden="true">
+          <img src="assets/hero-bss-2.jpg" alt="Bagunsession ao vivo" class="hero-photo">
+          <div class="hero-duotone-layer"></div>
+          <div class="hero-vignette"></div>
+        </div>
+
+        <div class="container hero-content-wrap">
+          <!-- Tag editorial no topo -->
+          <div class="hero-stamp-top" aria-hidden="true">
+            <span class="tag-ghost-light">REPARA NA BAGUNSSA</span>
+          </div>
+
+          <!-- Bloco tipográfico gigante sobreposto à base da foto -->
+          <div class="hero-overlay-content">
+            <div class="editorial-kicker">
+              <span class="kicker-text">EVENTO &amp; CENA MUSICAL</span>
+              <span class="kicker-slash" aria-hidden="true">/</span>
+              <span class="kicker-badge">AO VIVO &amp; SEM FILTRO</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="display-outline">BAGUNSESSION</span>
+            </h1>
+
+            <div class="hero-sub-row">
+              <p class="hero-manifesto">
+                Criar espaço ao invés de pedir.
+                <span class="handwritten-highlight">Repara na bagunssa.</span>
+              </p>
+              <div class="hero-ctas">
+                <a href="#edicoes" class="btn-primary">Explorar Edições →</a>
+                <a href="#artistas" class="btn-ghost-light">Quem Já bagunssou</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra editorial de dados rápidos (ecoando o layout de referência) -->
+      <div class="hero-info-bar">
+        <div class="container hero-info-grid">
+          <div class="info-cell">
+            <span class="info-label">ARQUIVO DE PALCO</span>
+            <strong class="info-value">08 EDIÇÕES</strong>
+          </div>
+          <div class="info-cell">
+            <span class="info-label">ARTISTAS NA CENA</span>
+            <strong class="info-value">20+ SHOWS</strong>
+          </div>
+          <div class="info-cell">
+            <span class="info-label">PRÓXIMA BAGUNSSA</span>
+            <a href="#proxima" class="info-value info-link">BSS-08 • EM BREVE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAIXA MARQUEE MANIFESTO
+    ========================================================== -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+        <span>REPARA NA BAGUNSSA</span>
+        <span class="marquee-dot">•</span>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         SEÇÃO "O PROJETO" (MANIFESTO) — MONTAGEM EDITORIAL PÚBLICO BSS
+    ========================================================== -->
+    <section class="section-dark manifesto-section" id="manifesto">
+      <div class="container">
+        <!-- Cabeçalho Editorial Full-Width -->
+        <div class="manifesto-top-bar">
+          <div class="editorial-kicker">
+            <span class="kicker-text">O PROJETO BAGUNSESSION</span>
+            <span class="kicker-slash" aria-hidden="true">/</span>
+            <span class="kicker-badge">MANIFESTO</span>
+          </div>
+          <span class="mono-code manifesto-doc-tag">PÚBLICO BSS // 04 REGISTROS</span>
+        </div>
+
+        <div class="manifesto-intro-grid">
+          <h2 class="section-headline">
+            <span class="manifesto-outline">CRIAR ESPAÇO</span>
+            <span class="manifesto-solid">AO INVÉS DE PEDIR</span>
+          </h2>
+
+          <div class="manifesto-intro-text">
+            <p class="manifesto-lead">
+              O <strong>BAGUNSESSION</strong> nasce da rua, do Home Studio e da urgência de criar espaço para mostrar
+              arte de qualidade. Sem esperar convite de circuito fechado.
+            </p>
+            <p class="handwritten-note">
+              “A regra é simples: avisa pra geral, fica à vontade e <span>repara na bagunssa.</span>”
+            </p>
+          </div>
+        </div>
+
+        <!-- Montagem Fotográfica Assimétrica (4 fotos publico-bss + bloco manifesto escuro) -->
+        <div class="manifesto-montage">
+          <figure class="montage-item montage-main">
+            <img src="assets/publico-bss-1.jpg" alt="Público reunido na pista da Bagunsession" loading="lazy">
+            <span class="montage-tag tag-blue">CENA REAL</span>
+            <figcaption class="montage-num">01 / A PISTA</figcaption>
+          </figure>
+
+          <figure class="montage-item montage-side-top">
+            <img src="assets/publico-bss-2.jpg" alt="Público curtindo show ao vivo na Bagunsession" loading="lazy">
+            <figcaption class="montage-num">02 / ENERGIA</figcaption>
+          </figure>
+
+          <figure class="montage-item montage-side-mid">
+            <img src="assets/publico-bss-3.jpg" alt="Galera colada no palco durante apresentação da BSS" loading="lazy">
+            <figcaption class="montage-num">03 / SEM BARREIRA</figcaption>
+          </figure>
+
+          <figure class="montage-item montage-wide-bottom">
+            <img src="assets/publico-bss-4.jpg" alt="Momento coletivo do público na Bagunsession" loading="lazy">
+            <figcaption class="montage-num">04 / COMUNIDADE</figcaption>
+          </figure>
+
+          <div class="montage-statement">
+            <span class="mono-code statement-label">DESORDEM ORGANIZADA</span>
+            <p class="manifesto-body-dark">
+              Mais do que uma sequência de apresentações, o BSS é uma <mark class="highlight-red">desordem
+                organizada</mark> entre artistas, cantores, DJs e público. Cada edição vira uma memória
+              sonora.
+            </p>
+          </div>
+        </div>
+
+        <!-- Barra Editorial de Pilares -->
+        <div class="manifesto-pillars">
+          <div class="pillar-card">
+            <span class="pillar-num">01</span>
+            <h3>Palco Autoral</h3>
+            <p>Curadoria focada em artistas com identidade própria e presença de palco.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">02</span>
+            <h3>Iniciativa Independente</h3>
+            <p>Evento feito por artistas para artistas.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">03</span>
+            <h3>Comunidade</h3>
+            <p>Público colado no palco, conexão real pós-show e rede que fortalece toda a cena.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VITRINE DE ARTISTAS / QUEM JÁ PASSOU (CRACHÁS / COLAGEM)
+    ========================================================== -->
+    <section class="section-paper artists-section" id="artistas">
+      <div class="container">
+        <!-- Barra editorial de título e contagem (inspirada em INDUCTEES / 322 / EXPLORE) -->
+        <div class="section-meta-bar">
+          <div class="meta-bar-item">
+            <span class="meta-label">VITRINE BAGUNSESSION</span>
+            <h2 class="meta-title">QUEM JÁ BAGUNSSOU</h2>
+          </div>
+          <div class="meta-bar-item">
+            <span class="meta-label">EM DESTAQUE</span>
+            <strong class="meta-stat" id="artists-count">21</strong>
+          </div>
+          <div class="meta-bar-item meta-bar-note">
+            <span class="meta-label">CENA INDEPENDENTE</span>
+            <span class="meta-hint">DJ Sets &amp; Pocket Shows ao vivo</span>
+          </div>
+        </div>
+
+        <!-- Filtros rápidos por sonoridade -->
+        <div class="filter-bar" id="artist-filters" role="tablist" aria-label="Filtrar artistas por sonoridade">
+          <!-- Populado dinamicamente pelo script.js -->
+        </div>
+      </div>
+
+      <!-- Vitrine em rolagem horizontal infinita ponta a ponta (como o marquee do Hero) -->
+      <div class="artists-marquee-viewport" id="artists-viewport">
+        <div class="artists-marquee-track" id="artists-grid">
+          <!-- Cards gerados via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ARQUIVO DE EDIÇÕES (HISTÓRICO — CONTRASTE ESCURO)
+    ========================================================== -->
+    <section class="section-dark editions-section" id="edicoes">
+      <div class="container">
+        <div class="editions-layout">
+          <!-- Coluna Esquerda: Título gigante vazado + Filtros de Edição -->
+          <div class="editions-sidebar">
+            <div class="editorial-kicker">
+              <span class="kicker-text">MEMÓRIA &amp; PORTFÓLIO DE EVENTOS</span>
+              <span class="kicker-slash" aria-hidden="true">/</span>
+              <span class="kicker-badge">HISTÓRICO</span>
+            </div>
+
+            <h2 class="editions-headline">
+              <span class="display-outline">ARQUIVO</span>
+              <span class="display-outline">DE EDIÇÕES</span>
+            </h2>
+
+            <p class="editions-intro">
+              7 Edições realizadas: cada noite registrada em fotos, line-ups e histórias da cena. Filtre
+              abaixo para explorar o arquivo.
+            </p>
+
+            <!-- Filtros por edição -->
+            <div class="edition-filter-chips" id="edition-filters" role="tablist" aria-label="Filtrar por edição">
+              <!-- Populado via script.js -->
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Lista editorial clicável (inspirada em STORIES OF ROCK) -->
+          <div class="editions-list-wrap">
+            <div class="editions-list" id="editions-list">
+              <!-- Linhas geradas via script.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Painel de Destaque da Edição Selecionada (Polaroids + Ficha Técnica) -->
+        <article class="edition-spotlight" id="edition-spotlight" aria-live="polite">
+          <!-- Renderizado dinamicamente via script.js -->
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EQUIPE DESENVOLVEDORA / REALIZADORA DO EVENTO
+    ========================================================== -->
+    <section class="section-paper team-section" id="equipe">
+      <div class="container">
+        <!-- Cabeçalho Editorial Full-Width (mesmo padrão do Manifesto em versão clara) -->
+        <div class="manifesto-top-bar team-top-bar">
+          <div class="editorial-kicker kicker-on-paper">
+            <span class="kicker-text">BASTIDORES &amp; REALIZAÇÃO</span>
+            <span class="kicker-slash" aria-hidden="true">/</span>
+            <span class="kicker-badge">QUEM FAZ A BAGUNSSA</span>
+          </div>
+          <span class="mono-code manifesto-doc-tag">CREW BSS // 04 INTEGRANTES</span>
+        </div>
+
+        <div class="manifesto-intro-grid team-intro-grid">
+          <h2 class="section-headline">
+            <span class="display-outline-dark">EQUIPE DA</span>
+            <span class="display-solid-dark">BAGUNSSA</span>
+          </h2>
+
+          <div class="team-intro-text">
+            <p class="manifesto-lead">
+              Por trás de cada edição do <strong>BAGUNSESSION</strong> existe uma equipe independente cuidando da
+              curadoria, direção criativa, produção de palco, som e comunicação — tudo feito na raça e com identidade
+              própria.
+            </p>
+            <p class="handwritten-note">
+              “Evento independente feito por quem vive a cena de perto.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Foto Coletiva Editorial (no mesmo estilo das fotos do Manifesto) -->
+        <figure class="montage-item team-banner-photo">
+          <img src="assets/hero-bss.jpg" alt="Equipe realizadora da Bagunsession vestindo camisetas oficiais BSS"
+            loading="lazy">
+          <span class="montage-tag tag-blue">CREW // BSS</span>
+          <figcaption class="montage-num">TIME QUE BOTA A BAGUNSESSION NA RUA</figcaption>
+        </figure>
+
+        <!-- Grid de Fichas da Equipe (populado via script.js) -->
+        <div class="team-grid" id="team-grid">
+          <!-- Cards gerados dinamicamente via TEAM_DATA no script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRÓXIMA BAGUNSSA (INFORMATIVO — SEM CHECKOUT)
+    ========================================================== -->
+    <section class="next-section" id="proxima">
+      <div class="container">
+        <div class="next-poster-top">
+          <span class="tag-blue">PRÓXIMA EDIÇÃO • INFORMATIVO</span>
+          <span class="mono-code next-edition-code">BSS-08 // Especial 2 anos</span>
+        </div>
+
+        <div class="next-poster-body">
+          <div class="next-headline-col">
+            <h2 class="next-title">PRÓXIMA<br><span>BAGUNSSA</span></h2>
+            <p class="next-handwritten">Salva a data e avisa pra geral!</p>
+          </div>
+
+          <div class="next-details-col">
+            <dl class="next-specs">
+              <div class="spec-row">
+                <dt>DATA</dt>
+                <dd>Domingo, 13 de Dezembro</dd>
+              </div>
+              <div class="spec-row">
+                <dt>HORÁRIO</dt>
+                <dd>Abertura da casa 19h • Shows a partir das 20h30</dd>
+              </div>
+              <div class="spec-row">
+                <dt>LOCAL</dt>
+                <dd>Firma Ltda / Centro — Rio de janeiro, RJ</dd>
+              </div>
+              <div class="spec-row">
+                <dt>COMO COLAR</dt>
+                <dd>Line-up completo, lista amiga e avisos saem primeiro no Instagram oficial.</dd>
+              </div>
+            </dl>
+
+            <div class="next-actions">
+              <a href="https://instagram.com/bagunsession" target="_blank" rel="noopener noreferrer"
+                class="btn-dark-solid">
+                Acompanhar no @bagunsession →
+              </a>
+              <button type="button" class="btn-outline-dark" id="copy-insta-btn" data-copy="@bagunsession">
+                Copiar @bagunsession
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER (FUNDO ESCURO)
+  ========================================================== -->
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#topo" class="brand-logo footer-logo" aria-label="Voltar ao topo">
+            <img src="assets/logo-bss.png" alt="Logo BSS" class="bss-logo-img bss-logo-lg">
+          </a>
+          <p class="footer-tagline">
+            O que é a bagunssa pra você? Pra nós é autenticidade. A bagunssa é o que somos.
+          </p>
+          <span class="footer-hand">repara na bagunssa.</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>NAVEGAÇÃO</h4>
+          <ul>
+            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#artistas">Quem Já Bagunssou</a></li>
+            <li><a href="#edicoes">Arquivo de Edições</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#proxima">Próxima Bagunssa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>REDES &amp; SOM</h4>
+          <ul>
+            <li><a href="https://instagram.com/bagunsession" target="_blank" rel="noopener noreferrer">Instagram
+                (@bagunsession)</a></li>
+            <li><a href="https://open.spotify.com/playlist/6LR12hckKhwZazwrvDXpt1?si=IZ6pbZsESIeHEK-d77uwIg"
+                target="_blank" rel="noopener noreferrer">Playlist Oficial no
+                Spotify</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLHubqcyTUSGw-FMZjzqrGnGBgnFoDa-4G" target="_blank"
+                rel="noopener noreferrer">Sessions no YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4>BOOKING, PARCERIAS &amp; IMPRENSA</h4>
+          <p class="footer-contact-note">
+            Quer tocar na BSS, propor parceria cultural ou cobrir a próxima edição? Manda um salve:
+          </p>
+          <div class="email-copy-box">
+            <a href="mailto:bagunsession@gmail.com" class="footer-email">bagunsession@gmail.com</a>
+            <button type="button" class="btn-copy-mini" id="copy-email-btn" data-copy="bagunsession@gmail.com">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> BAGUNSESSION (BSS). Todos os direitos reservados.</p>
+        <p class="footer-credits">Produção Independente • Direção Criativa &amp; Cultura Urbana Brasileira</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
